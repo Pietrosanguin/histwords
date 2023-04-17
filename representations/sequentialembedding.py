@@ -25,7 +25,7 @@ class SequentialEmbedding:
 
     def get_time_sims(self, word1, word2):
        time_sims = collections.OrderedDict()
-       for year, embed in self.embeds.iteritems():
+       for year, embed in self.embeds.items():
            time_sims[year] = embed.similarity(word1, word2)
        return time_sims
 
